@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+@font-face
+{
+	font-family: 'nfs';
+	src: url('/assets/NFS.ttf') format('truetype');
+}
+body
+{
+	background-color: #ffffff;
+	font-family: helvetica;
+}
+.header1
+{
+	margin-left: 150px;
+	font-family: nfs;
+}
+.garage_table
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+table
+{
+	background-color: #000000;
+	color: #ffffff;
+	width: 100%;
+}
+th
+{
+	background-color: #909090;
+}
+td
+{
+	text-align: center;
+}
+.navbar
+{
+	float: left;
+}
+ul.navbar
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	font-family: nfs;
+}
+li.navbar
+{
+	float: none;
+}
+a:link,a:visited
+{
+	display:block;
+	width:120px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#ff0000;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+a:hover,a:active
+{
+	color: #000000;
+	background-color:#c0c0c0;
+}
