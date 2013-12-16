@@ -1,0 +1,32 @@
+<div class="header1">
+	<h1>Search Results</h1>
+</div>
+
+<div class="garage_table">
+	<table>
+	  <tr>
+			<th>Year</th>
+			<th>Color</th>
+			<th>Make</th>
+			<th>Model</th>		
+			<th>Plate No.</th>
+			<th>Owner</th>
+		</tr>
+		<% if @cars.count == 0 %>
+			<tr>
+				<td colspan=6>No cars found.</td>
+			</tr>
+		<% else %>
+			<% @cars.each do |car| %>
+				<tr>
+					<td><%= car.year %></td>
+					<td><%= car.color %></td>
+					<td><%= car.make %></td>
+					<td><%= car.model %></td>
+					<td><%= car.plate_no %></td>
+					<td><%= car.owner %></td>
+				</tr>
+			<% end %>
+		<% end %>
+	</table>
+</div>

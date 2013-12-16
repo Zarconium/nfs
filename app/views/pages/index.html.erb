@@ -1,5 +1,5 @@
 <div class="header1">
-	<h1>My Garage</h1>
+	<h1>Latest Car</h1>
 </div>
 
 <div class="garage_table">
@@ -13,15 +13,13 @@
 			<th>Owner</th>
 		</tr>
 		
-		<% @items.each do |car| %>
 		<tr>
-			<td><%= car.year %> </td>
-			<td><%= car.color %></td>
-			<td><%= car.make %></td>
-			<td><%= car.model %></td>
-			<td><%= car.plate_no %></td>
-			<td><%= car.owner %></td>
+			<td><%= @last_car.year %></td>
+			<td><%= @last_car.color %></td>
+			<td><%= @last_car.make %></td>
+			<td><%= @last_car.model %></td>
+			<td><%= @last_car.plate_no %></td>
+			<td><%= @last_car.owner %></td>
 		</tr>
-		<% end %>
 	</table>
 </div>

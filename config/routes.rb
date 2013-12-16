@@ -1,6 +1,8 @@
 Nfs::Application.routes.draw do
 	root "pages#index"
 	get "/about", :to => "pages#about", :as => :about
+  get "/all", :to => "pages#all_cars", :as => :all
+  get "/search/:value/owner", :to => "pages#search_owner", :as => :search_owner
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
